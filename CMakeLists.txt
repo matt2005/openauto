@@ -85,7 +85,7 @@ add_subdirectory(openauto)
 add_subdirectory(autoapp)
 add_dependencies(autoapp btservice_proto)
 
-set (OPENAUTO_VERSION_PATCH ${_commit_timestamp})
+set (OPENAUTO_VERSION_PATCH ${_build_version})
 set (OPENAUTO_VERSION_STRING ${OPENAUTO_VERSION_MAJOR}.${OPENAUTO_VERSION_MINOR}.${OPENAUTO_VERSION_PATCH})
 
 install(DIRECTORY lib DESTINATION lib COMPONENT libraries)
